@@ -1,0 +1,6 @@
+timestamp_s,chamber_pressure_psi,thrust_lbf,oxidizer_pressure_psi,fuel_pressure_psi
+0.0,14.7,0.0,750.0,620.0
+0.1,150.2,220.5,748.8,618.9
+0.2,355.7,610.1,746.2,616.7
+0.3,510.4,890.6,742.5,614.1
+0.4,525.1,915.3,740.0,612.8
