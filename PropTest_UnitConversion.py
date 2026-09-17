@@ -1,5 +1,3 @@
-from PropTest_CSVPipeline import load_csv
-
 def psi_to_pa(pressure_psi):
     # Converts pressure from pounds per square inch (psi) to pascals (Pa).
     
@@ -26,9 +24,3 @@ def convert_samples_to_si(samples):
         si_samples.append(convert_sample_to_si(sample))
 
     return si_samples
-
-if __name__ == "__main__":
-    test_samples = load_csv("fake_test_data.csv")
-    si_samples = convert_samples_to_si(test_samples)
-    
-    print(si_samples)
