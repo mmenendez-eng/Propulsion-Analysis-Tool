@@ -7,6 +7,7 @@ from PropTest_Analysis import (
     total_impulse,
     burn_duration,
 )
+from PropTest_Visualization import plot_chamber_pressure, plot_thrust
 
 if __name__ == "__main__":
     test_samples = load_csv("fake_test_data.csv")
@@ -25,3 +26,6 @@ if __name__ == "__main__":
     print(f"Average Thrust: {average_thrust_value:.2f} N")
     print(f"Total Impulse: {total_impulse_value:.2f} N.s")
     print(f"Burn Duration: {burn_duration_value:.2f} s")
+
+    plot_chamber_pressure(si_samples)
+    plot_thrust(si_samples)
