@@ -25,9 +25,15 @@ def average_thrust(data):
 def total_impulse(data):
     total = 0.0
 
+    if len(data) < 2:
+        raise ValueError("At least two data points are required to calculate total impulse.")
+
     for i in range(len(data) - 1):
         t1 = data[i]["timestamp_s"]
         t2 = data[i + 1]["timestamp_s"]
+
+        if t2 <= t1:
+            raise ValueError("Timestamps must be in ascending order.")
 
         dt = t2 - t1
 

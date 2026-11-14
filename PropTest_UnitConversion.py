@@ -1,7 +1,7 @@
 def psi_to_pa(pressure_psi):
     # Converts pressure from pounds per square inch (psi) to pascals (Pa).
     
-    return pressure_psi * 6894.757
+    return pressure_psi * 6894.757293
 
 def lbf_to_n(thrust_lbf):
     # Converts thrust from pounds force (lbf) to newtons (N).
